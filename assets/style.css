@@ -1,0 +1,91 @@
+/* ตั้งค่าพื้นฐานและฟอนต์ */
+body {
+    background-color: #121212; /* สีพื้นหลังดำเข้ม */
+    color: #e0e0e0; /* สีตัวอักษรขาวนวล */
+    font-family: 'Sarabun', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* จัดกึ่งกลางเนื้อหาหลัก */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* สไตล์ส่วนหัว */
+header {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #a0a0a0;
+}
+
+/* สไตล์หัวข้อของแต่ละส่วน */
+h2 {
+    font-size: 2rem;
+    color: #bb86fc; /* สีม่วงอ่อนสำหรับเน้น */
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+/* จัดเรียงรายการเพลง/วิดีโอเป็น Grid */
+.media-grid {
+    display: grid;
+    /* สร้างคอลัมน์อัตโนมัติ โดยแต่ละรายการกว้างอย่างน้อย 320px */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px; /* ระยะห่างระหว่างรายการ */
+    margin-top: 20px;
+}
+
+/* สไตล์ของแต่ละรายการ */
+.media-item {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.media-item:hover {
+    transform: translateY(-5px);
+}
+
+.media-item h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ทำให้ Player (audio/video) กว้างเต็มกล่อง */
+audio, video {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* ส่วนท้ายเว็บ */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    color: #777;
+}
