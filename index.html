@@ -4,69 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Private Music Box</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ตั้งค่าพื้นฐานและฟอนต์ */
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Sarabun', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* จัดกึ่งกลางเนื้อหาหลัก */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* สไตล์ส่วนหัว */
+        header {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        /* ... คัดลอก CSS ที่เหลือทั้งหมดจากไฟล์ style.css มาวางต่อที่นี่ ... */
+
+        .media-item {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+        
+        .media-item:hover {
+            transform: translateY(-5px);
+        }
+
+        /* ... ไปจนถึงส่วน footer ... */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
-
     <div class="container">
         <header>
             <h1>🎵 My Private Music Box 🎬</h1>
-            <p>คลังเพลงและวิดีโอส่วนตัวของคุณ</p>
         </header>
-
         <main>
-            <section id="music-section">
-                <h2>🎶 เพลงโปรด (My Playlist)</h2>
-                <div class="media-grid">
-
-                    <div class="media-item">
-                        <h3>ชื่อเพลงที่ 1 - ศิลปิน</h3>
-                        <audio controls src="music/song1.mp3">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-
-                    <div class="media-item">
-                        <h3>ชื่อเพลงที่ 2 - ศิลปิน</h3>
-                        <audio controls src="music/song2.mp3">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-
-                    </div>
-            </section>
-
-            <section id="video-section">
-                <h2>🎬 คลิปวิดีโอ / MV (My Videos)</h2>
-                <div class="media-grid">
-
-                    <div class="media-item">
-                        <h3>ชื่อวิดีโอ 1</h3>
-                        <video controls width="100%" preload="metadata">
-                            <source src="videos/mv1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-
-                    <div class="media-item">
-                        <h3>ชื่อวิดีโอ 2</h3>
-                        <video controls width="100%" preload="metadata">
-                            <source src="videos/clip2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                    
-                    </div>
-            </section>
-        </main>
-
+            </main>
         <footer>
             <p>&copy; 2025 Your Name. All Rights Reserved.</p>
         </footer>
     </div>
-
 </body>
 </html>
